@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="Search"
+  >
+    <input
+      class="Search-input"
+    />
+  </div>
+</DocumentFragment>
+`;
