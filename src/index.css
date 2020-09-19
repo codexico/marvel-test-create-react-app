@@ -7,9 +7,10 @@
   --color-scarlet: #ff1510;
   --color-wisp-pink: #fdecec;
   --color-frostee: #e7f6e7;
-  --font-color-title: var(--font-color-tundora);
-  --font-color-text: var(--font-color-gray);
-  --font-color-info: var(--font-color-silver);
+  --font-color-title: var(--color-tundora);
+  --font-color-text: var(--color-gray);
+  --font-color-info: var(--color-silver);
+  --font-color-input: var(--color-scarlet);
 }
 
 html {

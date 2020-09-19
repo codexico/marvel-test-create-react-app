@@ -1,3 +1,39 @@
+
+
 .Search {
-    text-align: center;
+  width: 70%;
+  --height: 4rem;
+  margin: 0 auto;
+  padding: 12px;
+
+  border-radius: calc(var(--height) / 2);
+  background-color: var(--color-wisp-pink);
+}
+
+.Search-label {
+  display: flex;
+}
+
+.Search-inputButton {
+  margin-right: 20px;
+
+  border: none;
+  background: none;
+}
+
+.Search-inputIcon {
+  width: auto;
+  height: calc(var(--height) / 2);
+}
+
+.Search-input {
+  flex-grow: 1;
+
+  height: calc(var(--height) - 12px);
+
+  border: none;
+  background: none;
+
+  color: var(--font-color-input);
+  font-size: calc(var(--height) / 2);
 }

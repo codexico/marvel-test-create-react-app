@@ -7,6 +7,7 @@
 .Header-title {
   margin: 17px 0 0;
 
+  color: var(--font-color-title);
   font-size: 32px;
 }
 
