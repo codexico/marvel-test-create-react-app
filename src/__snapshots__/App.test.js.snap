@@ -27,9 +27,32 @@ exports[`Link renders correctly 1`] = `
     <div
       class="Search"
     >
-      <input
-        class="Search-input"
-      />
+      <form
+        class="Search-form"
+      >
+        <div
+          class="Search-inputGroup"
+        >
+          <label
+            class="Search-label"
+            for=""
+          >
+            <button
+              class="Search-inputButton"
+            >
+              <svg
+                class="Search-inputIcon"
+              >
+                search.svg
+              </svg>
+            </button>
+            <input
+              class="Search-input"
+              placeholder="Procure por heróis"
+            />
+          </label>
+        </div>
+      </form>
     </div>
     <div
       class="HeroesList"
