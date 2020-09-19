@@ -5,7 +5,21 @@ exports[`Component renders correctly 1`] = `
   <div
     class="Header"
   >
-    Marvel Search Heroes
+    <svg
+      title="Marvel - Search heroes"
+    >
+      logo.svg
+    </svg>
+    <h2
+      class="Header-title"
+    >
+      EXPLORE O UNIVERSO
+    </h2>
+    <h3
+      class="Header-subtitle"
+    >
+      Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+    </h3>
   </div>
 </DocumentFragment>
 `;

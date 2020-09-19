@@ -16,7 +16,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "csscomb": "csscomb .",
     "stylelint": "stylelint '**/*.css'"
   },
   "eslintConfig": {

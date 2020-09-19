@@ -1,10 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
+:root {
+  --color-tundora: #404040;
+  --color-gray: #8c8c8c;
+  --color-silver: #b9b9b9;
+  --color-scarlet: #ff1510;
+  --color-wisp-pink: #fdecec;
+  --color-frostee: #e7f6e7;
+  --font-color-title: var(--font-color-tundora);
+  --font-color-text: var(--font-color-gray);
+  --font-color-info: var(--font-color-silver);
+}
+
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
+
+  color: var(--font-color-text);
+  font-family: "Work Sans", sans-serif;
 }

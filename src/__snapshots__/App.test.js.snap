@@ -8,7 +8,21 @@ exports[`Link renders correctly 1`] = `
     <div
       class="Header"
     >
-      Marvel Search Heroes
+      <svg
+        title="Marvel - Search heroes"
+      >
+        logo.svg
+      </svg>
+      <h2
+        class="Header-title"
+      >
+        EXPLORE O UNIVERSO
+      </h2>
+      <h3
+        class="Header-subtitle"
+      >
+        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+      </h3>
     </div>
     <div
       class="Search"
@@ -20,7 +34,286 @@ exports[`Link renders correctly 1`] = `
     <div
       class="HeroesList"
     >
-      HeroesList
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Black Queen"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Black Queen
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Mercury"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Mercury
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Nicolaos"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Nicolaos
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="The Executioner"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/e/d0/4ce5a2ab860be.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          The Executioner
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Champions"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/8/b0/4c00376da82bb.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Champions
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Jack Murdock"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Jack Murdock
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Janus, the Nega-Man"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Janus, the Nega-Man
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Mordo"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Mordo
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Mysterio (Francis Klum)"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Mysterio (Francis Klum)
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Sabretooth (House of M)"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/5/80/4c0033dd26d33.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Sabretooth (House of M)
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Lady Mastermind"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/5/d0/4c00326f63d4c.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Lady Mastermind
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Living Mummy"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Living Mummy
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Living Tribunal"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/2/a0/4c0031062f91f.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Living Tribunal
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Scorpion (Ultimate)"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Scorpion (Ultimate)
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Omega the Unknown"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/f/10/4ce5a4e4cd15d.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Omega the Unknown
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Infant Terrible"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/2/f0/4c002f7854e02.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Infant Terrible
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Crimson King"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Crimson King
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Captain Cross"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Captain Cross
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="War Machine (Ultimate)"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/9/a0/4ce5a5647d38b.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          War Machine (Ultimate)
+        </p>
+      </div>
+      <div
+        class="HeroCard"
+      >
+        <img
+          alt="Patch"
+          class="HeroCard-img"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        />
+        <p
+          class="HeroCard-name"
+        >
+          Patch
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>

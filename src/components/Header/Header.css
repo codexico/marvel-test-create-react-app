@@ -1,3 +1,18 @@
 .Header {
-    text-align: center;
+  margin-top: 35px;
+
+  text-align: center;
+}
+
+.Header-title {
+  margin: 17px 0 0;
+
+  font-size: 32px;
+}
+
+.Header-subtitle {
+  margin: 7px 0;
+
+  font-size: 14px;
+  font-weight: normal;
 }
