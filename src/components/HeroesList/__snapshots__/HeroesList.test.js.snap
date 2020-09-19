@@ -9,14 +9,14 @@ exports[`Component renders correctly 1`] = `
       class="HeroCard"
     >
       <img
-        alt="Black Queen"
+        alt="Hulk"
         class="HeroCard-img"
-        src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg"
       />
       <p
         class="HeroCard-name"
       >
-        Black Queen
+        Hulk
       </p>
     </div>
     <div

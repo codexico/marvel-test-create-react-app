@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import './HeroCard.css';
 
-function HeroCard({ name, thumbnail }) {
+function HeroCard({ heroID, name, thumbnail, handleClick }) {
   return (
-    <div className="HeroCard">
+    <div className="HeroCard" onClick={() => handleClick(heroID)}>
       <img
         className="HeroCard-img"
         src={`${thumbnail.path}.${thumbnail.extension}`}
@@ -17,6 +17,8 @@ function HeroCard({ name, thumbnail }) {
 }
 
 HeroCard.propTypes = {
+  heroID: PropTypes.number.isRequired,
+  handleClick: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   thumbnail: PropTypes.shape({
     path: PropTypes.string,

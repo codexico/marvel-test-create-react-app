@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import HeroesList from './HeroesList';
+import Hero from './Hero';
 
 test('Component renders correctly', () => {
-  const { asFragment } = render(<HeroesList handleClick={() => {}} />);
+  const { asFragment } = render(<Hero heroID={123} />);
 
   expect(asFragment()).toMatchSnapshot();
 });
