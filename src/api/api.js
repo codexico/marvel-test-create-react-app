@@ -23,3 +23,9 @@ export const apiHeroByID = (heroID) => {
 
   return axios.get(url).catch((err) => handleError(err));
 };
+
+export const apiHeroSearch = (name) => {
+  const url = `${path}?name=${name}&apikey=${apikey}`;
+
+  return axios.get(url).catch((err) => handleError(err));
+};

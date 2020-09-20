@@ -9,25 +9,42 @@ import {
 import data from './data/characters_limit20.json';
 import dataOrder from './data/characters_order-name.json';
 
-import { apiHeroesList, apiHeroesListOrderByName } from '../../api/api';
+import { apiHeroesListOrderByName } from '../../api/api';
 
 jest.mock('../../api/api');
 
 import HeroesList from './HeroesList';
 
 afterEach(() => {
-  apiHeroesList.mockClear();
+  apiHeroesListOrderByName.mockClear();
   cleanup();
 });
 
-test('Component renders correctly', async () => {
-  apiHeroesList.mockResolvedValue({ data: data });
-
+test('Component renders correctly empty', async () => {
   const { asFragment, getByText } = render(
-    <HeroesList handleClick={() => {}} />
+    <HeroesList
+      handleClick={() => {}}
+      setCharacters={() => {}}
+      characters={[]}
+    />
   );
 
-  expect(apiHeroesList).toHaveBeenCalledTimes(1);
+  const notFound = await waitForElement(() =>
+    getByText('Nenhum personagem encontrado.')
+  );
+
+  expect(notFound).toBeInTheDocument();
+  expect(asFragment()).toMatchSnapshot();
+});
+
+test('Component renders correctly with heroes', async () => {
+  const { asFragment, getByText } = render(
+    <HeroesList
+      handleClick={() => {}}
+      setCharacters={() => {}}
+      characters={data.data.results}
+    />
+  );
 
   const hero = await waitForElement(() => getByText('Hulk'));
 
@@ -36,36 +53,25 @@ test('Component renders correctly', async () => {
 });
 
 test('Component reorders', async () => {
-  apiHeroesList.mockResolvedValue({ data: data });
-
+  const setCharacters = jest.fn();
   const { asFragment, getByText } = render(
-    <HeroesList handleClick={() => {}} />
+    <HeroesList
+      handleClick={() => {}}
+      setCharacters={setCharacters}
+      characters={data.data.results}
+    />
   );
 
-  expect(apiHeroesList).toHaveBeenCalledTimes(1);
-  expect(asFragment()).toMatchSnapshot();
-
-  apiHeroesListOrderByName.mockResolvedValueOnce({ data: data });
+  apiHeroesListOrderByName.mockResolvedValueOnce({ data: dataOrder });
   const orderButton = await waitForElement(() =>
     getByText('Ordenar por nome - A/Z')
   );
   fireEvent.click(orderButton);
-  const hero = await waitForElement(() => getByText('Hulk'));
 
-  expect(hero).toBeInTheDocument();
+  await waitForElement(() => getByText('Hulk'));
+
   expect(apiHeroesListOrderByName).toHaveBeenCalledTimes(1);
   expect(apiHeroesListOrderByName).toHaveBeenCalledWith(false);
-  expect(asFragment()).toMatchSnapshot();
-
-  apiHeroesListOrderByName.mockResolvedValueOnce({ data: dataOrder });
-  const orderButtonReverse = await waitForElement(() =>
-    getByText('Ordenar por nome - A/Z')
-  );
-  fireEvent.click(orderButtonReverse);
-  const heroReverse = await waitForElement(() => getByText('Zzzax'));
-
-  expect(heroReverse).toBeInTheDocument();
-  expect(apiHeroesListOrderByName).toHaveBeenCalledTimes(2);
-  expect(apiHeroesListOrderByName).toHaveBeenCalledWith(true);
-  expect(asFragment()).toMatchSnapshot();
+  expect(setCharacters).toHaveBeenCalledTimes(1);
+  expect(setCharacters).toHaveBeenCalledWith(dataOrder.data.results);
 });

@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 import { apiHeroByID } from '../../api/api';
 
-import Header from '../../components/Header/Header';
-import Search from '../../components/Search/Search';
-
 import './Hero.css';
 
 function Hero({ heroID }) {
@@ -17,8 +14,6 @@ function Hero({ heroID }) {
 
   return (
     <div className="Hero">
-      <Header />
-      <Search />
       {character && (
         <>
           <h1>{character.name}</h1>

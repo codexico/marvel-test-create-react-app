@@ -1,34 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { apiHeroesList, apiHeroesListOrderByName } from '../../api/api';
+import { apiHeroesListOrderByName } from '../../api/api';
 
 import HeroCard from '../HeroCard/HeroCard';
 
 import './HeroesList.css';
 
-function HeroesList({ handleClick }) {
-  const [characters, setCharacters] = useState();
+function HeroesList({ handleClick, characters, setCharacters }) {
   const [ascDesc, setAscDesc] = useState(false);
 
-  useEffect(() => {
-    apiHeroesList().then(({ data }) => setCharacters(data));
-  }, []);
-
   function orderByName() {
-    apiHeroesListOrderByName(ascDesc).then(({ data }) => setCharacters(data));
+    apiHeroesListOrderByName(ascDesc).then(({ data }) => setCharacters(data?.data?.results));
     setAscDesc(!ascDesc);
   }
 
   return (
     <div className="HeroesList">
+      {characters?.length === 0 &&
+        <p>Nenhum personagem encontrado.</p>
+      }
       <div className="HeroesList-options">
         <button onClick={orderByName}>
           Ordenar por nome - A/Z
       </button>
       </div>
       <div className="HeroesList-cards">
-        {characters?.data?.results?.map((character) => (
+        {characters?.map((character) => (
           <HeroCard
             key={character.id}
             heroID={character.id}
@@ -44,6 +42,8 @@ function HeroesList({ handleClick }) {
 
 HeroesList.propTypes = {
   handleClick: PropTypes.func.isRequired,
+  characters: PropTypes.array,
+  setCharacters: PropTypes.func.isRequired,
 };
 
 export default HeroesList;

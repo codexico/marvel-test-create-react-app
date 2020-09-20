@@ -17,6 +17,7 @@ exports[`Component renders correctly 1`] = `
         >
           <button
             class="Search-inputButton"
+            type="button"
           >
             <svg
               class="Search-inputIcon"
@@ -26,7 +27,9 @@ exports[`Component renders correctly 1`] = `
           </button>
           <input
             class="Search-input"
+            maxlength="200"
             placeholder="Procure por heróis"
+            value=""
           />
         </label>
       </div>

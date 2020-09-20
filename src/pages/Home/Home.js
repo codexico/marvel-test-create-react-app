@@ -1,24 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Header from '../../components/Header/Header';
-import Search from '../../components/Search/Search';
 import HeroesList from '../../components/HeroesList/HeroesList';
 
 import './Home.css';
 
-function Home({ handleClick }) {
+function Home({ handleClick, characters, setCharacters }) {
   return (
     <div className="Home">
-      <Header />
-      <Search />
-      <HeroesList handleClick={handleClick} />
+      <HeroesList
+        handleClick={handleClick}
+        characters={characters}
+        setCharacters={setCharacters}
+      />
     </div>
   );
 }
 
 Home.propTypes = {
   handleClick: PropTypes.func.isRequired,
+  characters: PropTypes.array,
+  setCharacters: PropTypes.func.isRequired,
 };
 
 export default Home;

@@ -1,62 +1,159 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App handles search 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="Header"
+    >
+      <svg
+        title="Marvel - Search heroes"
+      >
+        logo.svg
+      </svg>
+      <h2
+        class="Header-title"
+      >
+        EXPLORE O UNIVERSO
+      </h2>
+      <h3
+        class="Header-subtitle"
+      >
+        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+      </h3>
+    </div>
+    <div
+      class="Search"
+    >
+      <form
+        class="Search-form"
+      >
+        <div
+          class="Search-inputGroup"
+        >
+          <label
+            class="Search-label"
+            for=""
+          >
+            <button
+              class="Search-inputButton"
+              type="button"
+            >
+              <svg
+                class="Search-inputIcon"
+              >
+                search.svg
+              </svg>
+            </button>
+            <input
+              class="Search-input"
+              maxlength="200"
+              placeholder="Procure por heróis"
+              value="Hulk"
+            />
+          </label>
+        </div>
+      </form>
+    </div>
+    <div
+      class="Home"
+    >
+      <div
+        class="HeroesList"
+      >
+        <div
+          class="HeroesList-options"
+        >
+          <button>
+            Ordenar por nome - A/Z
+          </button>
+        </div>
+        <div
+          class="HeroesList-cards"
+        >
+          <div
+            class="HeroCard"
+          >
+            <img
+              alt="Hulk"
+              class="HeroCard-img"
+              src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg"
+            />
+            <p
+              class="HeroCard-name"
+            >
+              Hulk
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`App renders Hero 1`] = `
 <DocumentFragment>
   <div
     class="App"
   >
     <div
+      class="Header"
+    >
+      <svg
+        title="Marvel - Search heroes"
+      >
+        logo.svg
+      </svg>
+      <h2
+        class="Header-title"
+      >
+        EXPLORE O UNIVERSO
+      </h2>
+      <h3
+        class="Header-subtitle"
+      >
+        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+      </h3>
+    </div>
+    <div
+      class="Search"
+    >
+      <form
+        class="Search-form"
+      >
+        <div
+          class="Search-inputGroup"
+        >
+          <label
+            class="Search-label"
+            for=""
+          >
+            <button
+              class="Search-inputButton"
+              type="button"
+            >
+              <svg
+                class="Search-inputIcon"
+              >
+                search.svg
+              </svg>
+            </button>
+            <input
+              class="Search-input"
+              maxlength="200"
+              placeholder="Procure por heróis"
+              value=""
+            />
+          </label>
+        </div>
+      </form>
+    </div>
+    <div
       class="Hero"
     >
-      <div
-        class="Header"
-      >
-        <svg
-          title="Marvel - Search heroes"
-        >
-          logo.svg
-        </svg>
-        <h2
-          class="Header-title"
-        >
-          EXPLORE O UNIVERSO
-        </h2>
-        <h3
-          class="Header-subtitle"
-        >
-          Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
-        </h3>
-      </div>
-      <div
-        class="Search"
-      >
-        <form
-          class="Search-form"
-        >
-          <div
-            class="Search-inputGroup"
-          >
-            <label
-              class="Search-label"
-              for=""
-            >
-              <button
-                class="Search-inputButton"
-              >
-                <svg
-                  class="Search-inputIcon"
-                >
-                  search.svg
-                </svg>
-              </button>
-              <input
-                class="Search-input"
-                placeholder="Procure por heróis"
-              />
-            </label>
-          </div>
-        </form>
-      </div>
       <h1>
         Black Queen
       </h1>
@@ -92,57 +189,60 @@ exports[`App renders Home 1`] = `
     class="App"
   >
     <div
+      class="Header"
+    >
+      <svg
+        title="Marvel - Search heroes"
+      >
+        logo.svg
+      </svg>
+      <h2
+        class="Header-title"
+      >
+        EXPLORE O UNIVERSO
+      </h2>
+      <h3
+        class="Header-subtitle"
+      >
+        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+      </h3>
+    </div>
+    <div
+      class="Search"
+    >
+      <form
+        class="Search-form"
+      >
+        <div
+          class="Search-inputGroup"
+        >
+          <label
+            class="Search-label"
+            for=""
+          >
+            <button
+              class="Search-inputButton"
+              type="button"
+            >
+              <svg
+                class="Search-inputIcon"
+              >
+                search.svg
+              </svg>
+            </button>
+            <input
+              class="Search-input"
+              maxlength="200"
+              placeholder="Procure por heróis"
+              value=""
+            />
+          </label>
+        </div>
+      </form>
+    </div>
+    <div
       class="Home"
     >
-      <div
-        class="Header"
-      >
-        <svg
-          title="Marvel - Search heroes"
-        >
-          logo.svg
-        </svg>
-        <h2
-          class="Header-title"
-        >
-          EXPLORE O UNIVERSO
-        </h2>
-        <h3
-          class="Header-subtitle"
-        >
-          Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
-        </h3>
-      </div>
-      <div
-        class="Search"
-      >
-        <form
-          class="Search-form"
-        >
-          <div
-            class="Search-inputGroup"
-          >
-            <label
-              class="Search-label"
-              for=""
-            >
-              <button
-                class="Search-inputButton"
-              >
-                <svg
-                  class="Search-inputIcon"
-                >
-                  search.svg
-                </svg>
-              </button>
-              <input
-                class="Search-input"
-                placeholder="Procure por heróis"
-              />
-            </label>
-          </div>
-        </form>
-      </div>
       <div
         class="HeroesList"
       >

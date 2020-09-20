@@ -5,55 +5,6 @@ exports[`Hero Page Component renders correctly when hero has all data 1`] = `
   <div
     class="Hero"
   >
-    <div
-      class="Header"
-    >
-      <svg
-        title="Marvel - Search heroes"
-      >
-        logo.svg
-      </svg>
-      <h2
-        class="Header-title"
-      >
-        EXPLORE O UNIVERSO
-      </h2>
-      <h3
-        class="Header-subtitle"
-      >
-        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
-      </h3>
-    </div>
-    <div
-      class="Search"
-    >
-      <form
-        class="Search-form"
-      >
-        <div
-          class="Search-inputGroup"
-        >
-          <label
-            class="Search-label"
-            for=""
-          >
-            <button
-              class="Search-inputButton"
-            >
-              <svg
-                class="Search-inputIcon"
-              >
-                search.svg
-              </svg>
-            </button>
-            <input
-              class="Search-input"
-              placeholder="Procure por heróis"
-            />
-          </label>
-        </div>
-      </form>
-    </div>
     <h1>
       Hulk
     </h1>
@@ -179,55 +130,6 @@ exports[`Hero Page Component renders correctly when hero has minimal data 1`] = 
   <div
     class="Hero"
   >
-    <div
-      class="Header"
-    >
-      <svg
-        title="Marvel - Search heroes"
-      >
-        logo.svg
-      </svg>
-      <h2
-        class="Header-title"
-      >
-        EXPLORE O UNIVERSO
-      </h2>
-      <h3
-        class="Header-subtitle"
-      >
-        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
-      </h3>
-    </div>
-    <div
-      class="Search"
-    >
-      <form
-        class="Search-form"
-      >
-        <div
-          class="Search-inputGroup"
-        >
-          <label
-            class="Search-label"
-            for=""
-          >
-            <button
-              class="Search-inputButton"
-            >
-              <svg
-                class="Search-inputIcon"
-              >
-                search.svg
-              </svg>
-            </button>
-            <input
-              class="Search-input"
-              placeholder="Procure por heróis"
-            />
-          </label>
-        </div>
-      </form>
-    </div>
     <h1>
       Black Queen
     </h1>

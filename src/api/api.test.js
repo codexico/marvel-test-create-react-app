@@ -1,7 +1,12 @@
 import axiosMock from 'axios';
 
 import * as apiUtils from './api-utils';
-import { apiHeroesList, apiHeroesListOrderByName, apiHeroByID } from './api';
+import {
+  apiHeroesList,
+  apiHeroesListOrderByName,
+  apiHeroByID,
+  apiHeroSearch,
+} from './api';
 
 jest.mock('axios');
 
@@ -131,6 +136,46 @@ describe('api', () => {
       expect(axiosMock.get).toHaveBeenCalledTimes(1);
       expect(axiosMock.get).toHaveBeenCalledWith(
         'https://gateway.marvel.com:443/v1/public/characters?orderBy=name&limit=20&apikey=123'
+      );
+      expect(apiUtils.handleError).toHaveBeenCalledTimes(1);
+      expect(apiUtils.handleError).toHaveBeenCalledWith(errorResponse);
+    });
+  });
+
+  describe('apiHeroSearch', () => {
+    test('success api call to apiHeroSearch', async () => {
+      const successResponse = {
+        data: '',
+        status: 200,
+        statusText: 'OK',
+      };
+      axiosMock.get.mockResolvedValueOnce(Promise.resolve(successResponse));
+
+      const response = await apiHeroSearch('hulk');
+      apiUtils.handleError = jest.fn();
+
+      expect(response).toEqual(successResponse);
+      expect(axiosMock.get).toHaveBeenCalledTimes(1);
+      expect(axiosMock.get).toHaveBeenCalledWith(
+        'https://gateway.marvel.com:443/v1/public/characters?name=hulk&apikey=123'
+      );
+      expect(apiUtils.handleError).toHaveBeenCalledTimes(0);
+    });
+
+    test('error api call to apiHeroSearch', async () => {
+      const errorResponse = {
+        data: '',
+        status: 400,
+        statusText: 'Bad Request',
+      };
+      axiosMock.get.mockRejectedValueOnce(errorResponse);
+      apiUtils.handleError = jest.fn();
+
+      await apiHeroSearch();
+
+      expect(axiosMock.get).toHaveBeenCalledTimes(1);
+      expect(axiosMock.get).toHaveBeenCalledWith(
+        'https://gateway.marvel.com:443/v1/public/characters?name=undefined&apikey=123'
       );
       expect(apiUtils.handleError).toHaveBeenCalledTimes(1);
       expect(apiUtils.handleError).toHaveBeenCalledWith(errorResponse);
