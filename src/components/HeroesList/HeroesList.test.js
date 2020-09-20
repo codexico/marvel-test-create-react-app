@@ -24,8 +24,10 @@ test('Component renders correctly empty', async () => {
   const { asFragment, getByText } = render(
     <HeroesList
       handleClick={() => {}}
+      handleFavourite={() => {}}
       setCharacters={() => {}}
       characters={[]}
+      favourites={[]}
     />
   );
 
@@ -41,8 +43,10 @@ test('Component renders correctly with heroes', async () => {
   const { asFragment, getByText } = render(
     <HeroesList
       handleClick={() => {}}
+      handleFavourite={() => {}}
       setCharacters={() => {}}
       characters={data.data.results}
+      favourites={[]}
     />
   );
 
@@ -57,8 +61,10 @@ test('Component reorders', async () => {
   const { asFragment, getByText } = render(
     <HeroesList
       handleClick={() => {}}
+      handleFavourite={() => {}}
       setCharacters={setCharacters}
       characters={data.data.results}
+      favourites={[]}
     />
   );
 

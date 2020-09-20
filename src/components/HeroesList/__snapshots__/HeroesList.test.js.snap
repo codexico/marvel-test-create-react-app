@@ -45,11 +45,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Hulk
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Hulk
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -59,11 +74,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Mercury
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Mercury
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -73,11 +103,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Nicolaos
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Nicolaos
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -87,11 +132,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/e/d0/4ce5a2ab860be.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          The Executioner
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            The Executioner
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -101,11 +161,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/8/b0/4c00376da82bb.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Champions
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Champions
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -115,11 +190,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Jack Murdock
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Jack Murdock
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -129,11 +219,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Janus, the Nega-Man
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Janus, the Nega-Man
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -143,11 +248,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Mordo
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Mordo
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -157,11 +277,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Mysterio (Francis Klum)
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Mysterio (Francis Klum)
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -171,11 +306,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/5/80/4c0033dd26d33.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Sabretooth (House of M)
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Sabretooth (House of M)
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -185,11 +335,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/5/d0/4c00326f63d4c.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Lady Mastermind
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Lady Mastermind
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -199,11 +364,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Living Mummy
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Living Mummy
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -213,11 +393,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/2/a0/4c0031062f91f.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Living Tribunal
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Living Tribunal
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -227,11 +422,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Scorpion (Ultimate)
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Scorpion (Ultimate)
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -241,11 +451,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/f/10/4ce5a4e4cd15d.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Omega the Unknown
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Omega the Unknown
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -255,11 +480,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/2/f0/4c002f7854e02.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Infant Terrible
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Infant Terrible
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -269,11 +509,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Crimson King
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Crimson King
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -283,11 +538,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Captain Cross
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Captain Cross
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -297,11 +567,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/9/a0/4ce5a5647d38b.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          War Machine (Ultimate)
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            War Machine (Ultimate)
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
       <div
         class="HeroCard"
@@ -311,11 +596,26 @@ exports[`Component renders correctly with heroes 1`] = `
           class="HeroCard-img"
           src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
         />
-        <p
-          class="HeroCard-name"
+        <div
+          class="HeroCard-info"
         >
-          Patch
-        </p>
+          <p
+            class="HeroCard-name"
+          >
+            Patch
+          </p>
+          <button
+            class="HeroCard-fav"
+            type="button"
+          >
+            <svg
+              aria-label="Clique para favoritar"
+              class="HeroCard-icon"
+            >
+              heart.svg
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

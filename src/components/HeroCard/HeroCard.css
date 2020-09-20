@@ -1,17 +1,21 @@
 .HeroCard {
+  --width: 240px;
+  --padding: 10px;
   display: flex;
 
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 
+  width: calc(var(--width) + var(--padding));
+
   margin: 0 20px 20px;
-  padding: 10px;
+  padding: var(--padding);
 }
 
 .HeroCard-img {
-  width: 240px;
-  height: 240px;
+  width: var(--width);
+  height: var(--width);
   margin-bottom: 10px;
 
   border-bottom: 5px solid red;
@@ -19,7 +23,22 @@
   object-fit: cover;
 }
 
+.HeroCard-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .HeroCard-name {
   font-size: 20px;
   font-weight: bold;
+  color: var(--font-color-title);
+}
+
+.HeroCard-fav {
+  background: none;
+  border: none;
+}
+
+.HeroCard-fav:hover {
+  cursor: pointer;
 }

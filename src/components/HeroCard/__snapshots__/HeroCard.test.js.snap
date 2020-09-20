@@ -1,5 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Component handles favourite 1`] = `
+<DocumentFragment>
+  <div
+    class="HeroCard"
+  >
+    <img
+      alt="Adam Warlock"
+      class="HeroCard-img"
+      src="http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860.jpg"
+    />
+    <div
+      class="HeroCard-info"
+    >
+      <p
+        class="HeroCard-name"
+      >
+        Adam Warlock
+      </p>
+      <button
+        class="HeroCard-fav"
+        type="button"
+      >
+        <svg
+          aria-label="Clique para favoritar"
+          class="HeroCard-icon"
+        >
+          heart.svg
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Component renders correctly 1`] = `
 <DocumentFragment>
   <div
@@ -10,11 +44,60 @@ exports[`Component renders correctly 1`] = `
       class="HeroCard-img"
       src="http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860.jpg"
     />
-    <p
-      class="HeroCard-name"
+    <div
+      class="HeroCard-info"
     >
-      Adam Warlock
-    </p>
+      <p
+        class="HeroCard-name"
+      >
+        Adam Warlock
+      </p>
+      <button
+        class="HeroCard-fav"
+        type="button"
+      >
+        <svg
+          aria-label="Clique para favoritar"
+          class="HeroCard-icon"
+        >
+          heart.svg
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component renders favourite 1`] = `
+<DocumentFragment>
+  <div
+    class="HeroCard"
+  >
+    <img
+      alt="Adam Warlock"
+      class="HeroCard-img"
+      src="http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860.jpg"
+    />
+    <div
+      class="HeroCard-info"
+    >
+      <p
+        class="HeroCard-name"
+      >
+        Adam Warlock
+      </p>
+      <button
+        class="HeroCard-fav"
+        type="button"
+      >
+        <svg
+          aria-label="Herói favorito"
+          class="HeroCard-icon"
+        >
+          fav.svg
+        </svg>
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -5,7 +5,12 @@ import Home from './Home';
 
 test('Component renders correctly', () => {
   const { asFragment } = render(
-    <Home handleClick={() => {}} setCharacters={() => {}} />
+    <Home
+      handleClick={() => {}}
+      setCharacters={() => {}}
+      handleFavourite={() => {}}
+      favourites={[]}
+    />
   );
 
   expect(asFragment()).toMatchSnapshot();

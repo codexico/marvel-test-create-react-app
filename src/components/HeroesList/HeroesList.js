@@ -7,12 +7,16 @@ import HeroCard from '../HeroCard/HeroCard';
 
 import './HeroesList.css';
 
-function HeroesList({ handleClick, characters, setCharacters }) {
+function HeroesList({ handleClick, characters, setCharacters, handleFavourite, favourites }) {
   const [ascDesc, setAscDesc] = useState(false);
 
   function orderByName() {
     apiHeroesListOrderByName(ascDesc).then(({ data }) => setCharacters(data?.data?.results));
     setAscDesc(!ascDesc);
+  }
+
+  function isFavourite(id) {
+    return favourites.includes(id)
   }
 
   return (
@@ -33,6 +37,8 @@ function HeroesList({ handleClick, characters, setCharacters }) {
             name={character.name}
             thumbnail={character.thumbnail}
             handleClick={handleClick}
+            handleFavourite={handleFavourite}
+            favourite={isFavourite(character.id)}
           />
         ))}
       </div>
@@ -43,7 +49,9 @@ function HeroesList({ handleClick, characters, setCharacters }) {
 HeroesList.propTypes = {
   handleClick: PropTypes.func.isRequired,
   characters: PropTypes.array,
+  favourites: PropTypes.array.isRequired,
   setCharacters: PropTypes.func.isRequired,
+  handleFavourite: PropTypes.func.isRequired,
 };
 
 export default HeroesList;

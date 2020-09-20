@@ -82,3 +82,44 @@ test('App handles search', async () => {
   expect(apiHeroSearch).toHaveBeenCalledWith('Hulk');
   expect(asFragment()).toMatchSnapshot();
 });
+
+test('App handles favourites', async () => {
+  apiHeroesList.mockResolvedValue({ data: data });
+  const { asFragment, getByLabelText, getAllByLabelText } = render(<App />);
+
+  const buttons = await waitForElement(() =>
+    getAllByLabelText('Clique para favoritar')
+  );
+
+  expect(buttons[0]).toBeInTheDocument();
+
+  fireEvent.click(buttons[0]);
+
+  const favouriteSelected = await waitForElement(() =>
+    getByLabelText('Herói favorito')
+  );
+  expect(favouriteSelected).toBeInTheDocument();
+
+  fireEvent.click(buttons[1]);
+  fireEvent.click(buttons[2]);
+  fireEvent.click(buttons[3]);
+  fireEvent.click(buttons[4]);
+  window.alert = jest.fn();
+  fireEvent.click(buttons[5]);
+
+  expect(window.alert).toHaveBeenCalledTimes(1);
+
+  const favouriteSelectedAll = await waitForElement(() =>
+    getAllByLabelText('Herói favorito')
+  );
+  expect(favouriteSelectedAll.length).toBe(5);
+
+  fireEvent.click(favouriteSelectedAll[0]);
+
+  const favouriteRemoved = await waitForElement(() =>
+    getAllByLabelText('Herói favorito')
+  );
+  expect(favouriteRemoved.length).toBe(4);
+
+  expect(asFragment()).toMatchSnapshot();
+});

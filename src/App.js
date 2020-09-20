@@ -14,6 +14,7 @@ function App() {
   const [page, setPage] = useState('home');
   const [heroID, setHeroID] = useState();
   const [characters, setCharacters] = useState();
+  const [favourites, setFavourites] = useState([]);
 
   useEffect(() => {
     apiHeroesList().then(({ data }) => setCharacters(data?.data?.results));
@@ -22,6 +23,18 @@ function App() {
   function handleClick(id) {
     setHeroID(id);
     setPage('hero');
+  }
+
+  function handleFavourite(id, add) {
+    if (add) {
+      if (favourites.length === 5) {
+        return alert('Máximo 5 favoritos')
+      }
+
+      setFavourites([...favourites, id]);
+    } else {
+      setFavourites(favourites.filter((value) => value !== id))
+    }
   }
 
   function handleSearch(name) {
@@ -39,7 +52,9 @@ function App() {
         <Home
           handleClick={handleClick}
           characters={characters}
+          favourites={favourites}
           setCharacters={setCharacters}
+          handleFavourite={handleFavourite}
         />
       )}
     </div>
