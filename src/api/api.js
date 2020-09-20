@@ -11,6 +11,13 @@ export const apiHeroesList = () => {
   return axios.get(url).catch((err) => handleError(err));
 };
 
+export const apiHeroesListOrderByName = (order = true) => {
+  const orderBy = `orderBy=${order ? '' : '-'}name&`;
+  const url = `${path}?${orderBy}limit=20&apikey=${apikey}`;
+
+  return axios.get(url).catch((err) => handleError(err));
+};
+
 export const apiHeroByID = (heroID) => {
   const url = `${path}/${heroID}?apikey=${apikey}`;
 

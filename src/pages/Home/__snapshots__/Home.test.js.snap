@@ -56,7 +56,18 @@ exports[`Component renders correctly 1`] = `
     </div>
     <div
       class="HeroesList"
-    />
+    >
+      <div
+        class="HeroesList-options"
+      >
+        <button>
+          Ordenar por nome - A/Z
+        </button>
+      </div>
+      <div
+        class="HeroesList-cards"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
