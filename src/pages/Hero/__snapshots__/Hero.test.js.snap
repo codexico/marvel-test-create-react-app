@@ -1,6 +1,180 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component renders correctly 1`] = `
+exports[`Hero Page Component renders correctly when hero has all data 1`] = `
+<DocumentFragment>
+  <div
+    class="Hero"
+  >
+    <div
+      class="Header"
+    >
+      <svg
+        title="Marvel - Search heroes"
+      >
+        logo.svg
+      </svg>
+      <h2
+        class="Header-title"
+      >
+        EXPLORE O UNIVERSO
+      </h2>
+      <h3
+        class="Header-subtitle"
+      >
+        Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+      </h3>
+    </div>
+    <div
+      class="Search"
+    >
+      <form
+        class="Search-form"
+      >
+        <div
+          class="Search-inputGroup"
+        >
+          <label
+            class="Search-label"
+            for=""
+          >
+            <button
+              class="Search-inputButton"
+            >
+              <svg
+                class="Search-inputIcon"
+              >
+                search.svg
+              </svg>
+            </button>
+            <input
+              class="Search-input"
+              placeholder="Procure por heróis"
+            />
+          </label>
+        </div>
+      </form>
+    </div>
+    <h1>
+      Hulk
+    </h1>
+    <p>
+      Caught in a gamma bomb explosion while trying to save the life of a teenager, Dr. Bruce Banner was transformed into the incredibly powerful creature called the Hulk. An all too often misunderstood hero, the angrier the Hulk gets, the stronger the Hulk gets.
+    </p>
+    <img
+      alt="Hulk"
+      src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/detail.jpg"
+    />
+    <p>
+      Quadrinhos 1666
+    </p>
+    <p>
+      Últimos lançamentos
+    </p>
+    <div>
+      <p>
+        5 Ronin (Hardcover)
+      </p>
+    </div>
+    <div>
+      <p>
+        5 Ronin (2010) #2
+      </p>
+    </div>
+    <div>
+      <p>
+        5 Ronin (2010) #2 (BROOKS COVER)
+      </p>
+    </div>
+    <div>
+      <p>
+        A+X (2012) #1
+      </p>
+    </div>
+    <div>
+      <p>
+        A+X (2012) #7
+      </p>
+    </div>
+    <div>
+      <p>
+        Absolute Carnage: Immortal Hulk (2019) #1
+      </p>
+    </div>
+    <div>
+      <p>
+        Actor Presents Spider-Man and the Incredible Hulk (2003) #1
+      </p>
+    </div>
+    <div>
+      <p>
+        Age of X: Universe (2011) #1
+      </p>
+    </div>
+    <div>
+      <p>
+        Age of X: Universe (2011) #2
+      </p>
+    </div>
+    <div>
+      <p>
+        All-New Savage She-Hulk (2009) #1
+      </p>
+    </div>
+    <div>
+      <p>
+        All-New Savage She-Hulk (2009) #2
+      </p>
+    </div>
+    <div>
+      <p>
+        Alpha Flight (1983) #29
+      </p>
+    </div>
+    <div>
+      <p>
+        Alpha Flight (1983) #110
+      </p>
+    </div>
+    <div>
+      <p>
+        Alpha Flight (1983) #111
+      </p>
+    </div>
+    <div>
+      <p>
+        Alpha Flight (1983) #127
+      </p>
+    </div>
+    <div>
+      <p>
+        The Amazing Spider-Man (1963) #14
+      </p>
+    </div>
+    <div>
+      <p>
+        Amazing Spider-Man (1999) #667
+      </p>
+    </div>
+    <div>
+      <p>
+        Amazing Spider-Man Annual (1964) #3
+      </p>
+    </div>
+    <div>
+      <p>
+        Amazing Spider-Man Annual (1964) #12
+      </p>
+    </div>
+    <div>
+      <p>
+        Amazing Spider-Man Annual (2011) #38
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hero Page Component renders correctly when hero has minimal data 1`] = `
 <DocumentFragment>
   <div
     class="Hero"
@@ -59,7 +233,7 @@ exports[`Component renders correctly 1`] = `
     </h1>
     <p />
     <img
-      alt="{character.name}"
+      alt="Black Queen"
       src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/detail.jpg"
     />
     <p>
