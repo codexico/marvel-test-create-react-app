@@ -58,7 +58,7 @@ test('Component renders correctly with heroes', async () => {
 
 test('Component reorders', async () => {
   const setCharacters = jest.fn();
-  const { asFragment, getByText } = render(
+  const { getByText } = render(
     <HeroesList
       handleClick={() => {}}
       handleFavourite={() => {}}

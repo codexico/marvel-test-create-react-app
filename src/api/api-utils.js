@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export const handleError = (error) => {
   if (error.response) {
     // The request was made and the server responded with a status code

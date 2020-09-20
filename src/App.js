@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header setPage={setPage} />
       <Search handleSearch={handleSearch} />
       {page !== 'home' ? (
         <Hero heroID={heroID} />

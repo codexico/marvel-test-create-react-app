@@ -9,6 +9,7 @@ exports[`App handles favourites 1`] = `
       class="Header"
     >
       <svg
+        class="Header-logo"
         title="Marvel - Search heroes"
       >
         logo.svg
@@ -669,6 +670,7 @@ exports[`App handles search 1`] = `
       class="Header"
     >
       <svg
+        class="Header-logo"
         title="Marvel - Search heroes"
       >
         logo.svg
@@ -778,6 +780,7 @@ exports[`App renders Hero 1`] = `
       class="Header"
     >
       <svg
+        class="Header-logo"
         title="Marvel - Search heroes"
       >
         logo.svg
@@ -867,6 +870,7 @@ exports[`App renders Home 1`] = `
       class="Header"
     >
       <svg
+        class="Header-logo"
         title="Marvel - Search heroes"
       >
         logo.svg
